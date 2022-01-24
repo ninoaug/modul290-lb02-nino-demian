@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/input-form.css" />
+  <title>Registrieren</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>Erstellen Sie jetzt ein Konto bei uns.</h2>
+      <div class="form-control">
+        <label>Geschlecht:
+          <select name="top5">
+            <option>Männlich</option>
+            <option>Weiblich</option>
+            <option>Andere</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-control">
+        <label for="Benutzername">Benutzername*</label>
+        <input type="text" id="Benutzername" placeholder="Benutzername erstellen" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="Email">Email*</label>
+        <input type="text" id="Email" placeholder="Email eingeben" />
+        <small>Error message</small>
+        <p>(z.B. max@beispiel.com)</p>
+      </div>
+      <div class="form-control">
+        <label for="Telefonnummer">Telefonnummer*</label>
+        <input type="Telefonnummer" id="Telefonnummer" placeholder="Telefonnummer eingeben" />
+        <small>Error message</small>
+        <p>(z.B. +41 7x xxx xx xx)</p>
+      </div>
+      <div class="form-control">
+        <label for="Passwort">Passwort*</label>
+        <input type="Passwort" id="Passwort" placeholder="Passwort erstellen" />
+        <small>Error message</small>
+      </div>
+      <p><b>*Felder sind obligatorisch</b></p>
+      <button type="submit">Registrieren</button>
+    </form>
+  </div>
+
+  <script src="js/validate-inputs.js"></script>
+  <script src="js/network.js"></script>
+</body>
+
+</html>
